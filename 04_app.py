@@ -63,7 +63,7 @@ station_info = data.groupby('name').agg({
 mean_usage = data.groupby('name')['in_use'].mean().to_dict()
 
 # Interfaz principal
-st.title("🚲 Predicción de Bicis en Uso a las 14:00")
+st.title("Bicinator, predictor de uso y disponibilidad")
 st.markdown("Selecciona una estación y la fecha para predecir la cantidad de bicicletas en uso:")
 
 col1, col2 = st.columns(2)
